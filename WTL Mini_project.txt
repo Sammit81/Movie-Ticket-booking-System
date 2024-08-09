@@ -1,0 +1,191 @@
+http://localhost:8012/OnlineMovieTicketBS-PHP
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int query;
+    do 
+    {
+    cout << "Press orresponding to select your query :  " <<endl;
+    cout << "1. Order food : " <<endl;
+    cout << "2. Cancel Order : " << endl;
+    cout << "3. Rate the order : " <<endl;
+    cout << "4. FAQs : " <<endl;
+    cout << "0. Exit :" <<endl;
+    cin >> query;
+    int order;
+    int cancel;
+    int rate;
+    int issue;
+    switch (query)
+    {
+    case 1 :
+            cout << "Select dish you want to order : " <<endl;
+            cout << "1. Bhel " <<endl;
+            cout << "2. SPDP " <<endl;
+            cout << "3. Mac & Cheese " <<endl;
+            cout << "4. Penne Arrabbiata " <<endl;
+            cout << "5. Misal " <<endl;
+            cout << "6. Sandwich " <<endl;
+            cout << "7. Coffee " <<endl;
+            cout << "8. Hot Chocolate " <<endl;
+            cin >> order;
+            if (order == 1)
+            {
+                cout << "Your order for Bhel is placed  " <<endl;
+                break;
+            }
+            else if (order == 2)
+            {
+                cout << "Your order for SPDP is placed  " <<endl;
+                break;
+            }
+            else if (order == 3)
+            {
+                cout << "Your order for Mac & Cheese is placed  " <<endl;
+                break;
+            }
+            else if (order == 4)
+            {
+                cout << "Your order for Penne Arrabbiata is placed  " <<endl;
+                break;
+            }
+            else if (order == 5)
+            {
+                cout << "Your order for Misal is placed  " <<endl;
+                break;
+            }
+            else if (order == 6)
+            {
+                cout << "Your order for Sandwich is placed  " <<endl;
+                break;
+            }
+            else if (order == 7)
+            {
+                cout << "Your order for Coffee is placed  " <<endl;
+                break;
+            }
+            else if (order == 8)
+            {
+                cout << "Your order for Hot Chocolate is placed  " <<endl;
+                break;
+            }
+            else 
+            {
+                cout << "Invalid Input"<<endl;
+                break;
+            }
+    case 2 :
+            cout << "Select the order you want to cancel : " <<endl;
+            cin >> cancel;
+            if (cancel == 1)
+            {
+                cout << "Your order for Bhel has been cancelled  " <<endl;
+                break;
+            }
+            else if (cancel == 2)
+            {
+                cout << "Your order for SPDP has been cancelled  " <<endl;
+                break;
+            }
+            else if (cancel == 3)
+            {
+                cout << "Your order for Mac & Cheese has been cancelled  " <<endl;
+                break;
+            }
+            else if (cancel == 4)
+            {
+                cout << "Your order for Penne Arrabbiata has been cancelled  " <<endl;
+                break;
+            }
+            else if (cancel == 5)
+            {
+                cout << "Your order for Misal has been cancelled  " <<endl;
+                break;
+            }
+            else if (cancel == 6)
+            {
+                cout << "Your order for Sandwich has been cancelled  " <<endl;
+                break;
+            }
+            else if (cancel == 7)
+            {
+                cout << "Your order for Coffee has been cancelled  " <<endl;
+                break;
+            }
+            else if (cancel == 8)
+            {
+                cout << "Your order for Hot Chocolate has been cancelled  " <<endl;
+                break;
+            }
+            else 
+            {
+                cout << "Invalid Input"<<endl;
+                break;
+            }
+    case 3 :
+            cout << " Rate your dish out of 5 : " << endl;
+            cin >> rate; 
+            if (rate == 1)
+            {
+                cout << "You rated your order " <<rate<<" star " <<endl;
+                break;
+            }
+            else if (rate == 2)
+            {
+                cout << "You rated your order " <<rate<<" star " <<endl;
+                break;
+            }
+            else if (rate == 3)
+            {
+                cout << "You rated your order " <<rate<<" star " <<endl;
+                break;
+            }
+            else if (rate == 4)
+            {
+                cout << "You rated your order " <<rate<<" star " <<endl;
+                break;
+            }
+            else if (rate == 5)
+            {
+                cout << "You rated your order " <<rate<<" star " <<endl;
+                break;
+            }
+            else
+            {
+                cout << "Invalid Input" <<endl;
+                break;
+            }
+    case 4 :
+            cout << "What kind issue are you facing : " <<endl;
+            cout << "1. What is status of my order " <<endl;
+            cout << "2. What is status of my refund " <<endl;
+            cout << "3. My payment was deducted but order was not processed " <<endl;
+            cin >> issue;
+            if (issue == 1)
+                {
+                    cout << "Our delivery agent is on it's way with your order " <<endl;
+                    break;
+                }
+            else if (issue == 2)
+                {
+                    cout << "You will receive your refund within 24 hours " <<endl;
+                    break;
+                }
+            else if (issue == 3)
+                {
+                    cout << "All your payment related queries will be resolved within 48 hours " <<endl;
+                    break;
+                }
+            else 
+                {
+                    cout << "Invalid Input" <<endl;
+                    break;
+                }
+    default : break;
+    }
+    }while(query != 0); 
+    return 0;
+}
